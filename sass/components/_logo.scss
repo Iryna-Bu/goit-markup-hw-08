@@ -1,0 +1,27 @@
+.site-nav >.logo {
+    display: flex;
+}
+
+.logo {
+    margin-top: 24px;
+    margin-bottom: 25px;
+    margin-right: 93px;
+    
+    /*background-color: tomato;*/
+    color: var(--primary-text-color);
+    font-family: raleway, sans serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.logo:hover, 
+.logo:focus {
+    color: var(--accent-color);
+}
+
+.logo--blue {
+    color: var(--accent-color);
+}

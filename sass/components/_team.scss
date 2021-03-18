@@ -1,0 +1,104 @@
+.team__section {
+    padding-bottom: 94px;
+    background-color: #F5F4FA;
+}
+
+.team__section-title {
+    padding-top: 94px;
+    padding-bottom: 50px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.66;
+    text-align: center;
+    color: var(--primary-text-color);
+}
+
+.team__list{
+    display: flex;
+    padding-right: 30px;
+    /*background-color: tomato;*/
+}
+
+.team__item {
+    margin-right: 30px;
+    justify-content: center;
+}
+
+&:last-child {
+    margin-right: 0;
+}
+
+.team__list > .team__item {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.item__name {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--primary-text-color);
+    text-align: center;
+}
+
+.item__job-position {
+    text-align: center;
+}
+
+.item__job-position {
+    font-size: 16px;
+    line-height: 1.9;
+    color:var(--secondary-text-color);
+    text-decoration: none;
+}
+
+.social-links__list {
+    display: flex;
+    justify-content: center;
+    margin: 16px 32px 30px;
+}
+
+.social-links__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center; 
+    background-size: contain;
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    background-color: transparent;
+}
+
+.social-links__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+&:last-child {
+    margin-right: 0;
+} 
+
+&:focus svg,
+&:hover svg,
+&:focus > .social-links__link,
+&:hover > .social-links__link {
+    fill: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+.social-links__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    fill: var(--client-color); 
+}

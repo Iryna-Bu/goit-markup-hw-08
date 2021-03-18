@@ -1,0 +1,29 @@
+.section-title {
+    padding-top: 94px;
+    padding-bottom: 50px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.66;
+    text-align: center;
+    color: var(--primary-text-color);
+}
+
+.works {
+    display:flex;
+    justify-content: center;
+    padding-bottom:94px;
+   /* background-color: tomato;*/
+}
+
+.img {
+    display: block;
+}
+
+.item {
+    margin-right: 30px;
+    justify-content: center;
+}
+
+&:last-child {
+    margin-right: 0;
+}
