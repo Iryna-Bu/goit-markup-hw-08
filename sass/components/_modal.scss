@@ -49,11 +49,11 @@
     background-color: var(--primary-white-color);
     border-radius: 50px;
     border: 1px solid var(--button-border);
-}
 
-&:focus svg,
-&:hover svg {
-    fill: var(--accent-color);
+    &:focus svg,
+    &:hover svg {
+        fill: var(--accent-color);
+    }
 }
 
 .form__title {
@@ -81,12 +81,12 @@
     position: relative;
     content: "";
     margin-bottom: 10px;
-}
 
-&:hover,
-&:focus-within {
-    fill: var(--accent-color);
-    transition: transform 250ms var(--cubic);
+    &:hover,
+    &:focus-within {
+        fill: var(--accent-color);
+        transition: transform 250ms var(--cubic);
+    }
 }
 
 .input-form { 
@@ -95,14 +95,14 @@
     width: 100%;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-}
 
-&:hover,
-&:focus{
-    outline: none;
-    color: var(--accent-color);
-    border-color: var(--accent-color);
-    transition: transform 250ms var(--cubic);
+    &:hover,
+    &:focus{
+        outline: none;
+        color: var(--accent-color);
+        border-color: var(--accent-color);
+        transition: transform 250ms var(--cubic);
+    }
 }
 
 .icon-form {
@@ -126,13 +126,13 @@
     border-radius: 4px;
     
     color: rgba(117, 117, 117, 0.5);
-}
 
-&:hover,
-&:focus {
-    border-color: var(--accent-color);
-    outline: none;
-    transition: transform 250ms var(--cubic);
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+        outline: none;
+        transition: transform 250ms var(--cubic);
+    }
 }
 
 .policy-field {
@@ -167,13 +167,14 @@
 .check-input {
     appearance: none;
     position: absolute;
-}
 
-&:checked + .icon-check {
-    background-color: var(--accent-color);
-    background-image: url(./img/symbol-defs.svg#icon-check);
-    background-size: contain;
-    border-color: var(--accent-color);
+
+    &:checked + .icon-check {
+        background-color: var(--accent-color);
+        background-image: url(./img/symbol-defs.svg#icon-check);
+        background-size: contain;
+        border-color: var(--accent-color);
+    }
 }
 
 .modal-form button {

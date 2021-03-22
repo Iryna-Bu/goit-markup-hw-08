@@ -102,13 +102,28 @@
 
     <!-- Чем мы занимаемся -->
     
-    <section>
+    <section class="activities">
         <div class="container">
             <h2 class="section-title">Чем мы занимаемся</h2>
             <ul class="works">
-                <li class="item"><img class="img" src="./img/img1.png" alt="Рабочий процесс" width="370"/></li>
-                <li class="item"><img class="img" src="./img/img2.png" alt="Рабочий процесс" width="370"/></li>
-                <li class="item"><img class="img" src="./img/img3.png" alt="Рабочий процесс" width="370"/></li>
+                <li class="item">
+                    <img class="img" src="./img/img1.png" alt="Рабочий процесс" width="370"/>
+                    <div>
+                        <p class="item__description">Десктопные приложения</p>
+                    </div>
+                </li>
+                <li class="item">
+                    <img class="img" src="./img/img2.png" alt="Рабочий процесс" width="370"/>
+                    <div>
+                        <p class="item__description">Мобильные приложения</p>
+                    </div>
+                </li>
+                <li class="item">
+                    <img class="img" src="./img/img3.png" alt="Рабочий процесс" width="370"/>
+                    <div>
+                        <p class="item__description">Дизайнерские решения</p>
+                    </div>
+                </li>
             </ul>
         </div>
     </section>
@@ -116,11 +131,16 @@
 
     <!-- Наша команда -->
     <section class="team__section">
-        <div class="container">
+        <div class="container team-container">
             <h2 class="team__section-title">Наша команда</h2>
             <ul class="team__list">
                 <li class="team__item">
-                    <img src="./img/IgorDemianenko.jpg" alt="Игорь Демьяненко" width="270"/>
+                    <div class="team__thumb">
+                        <img src="./images/team/img.jpg" 
+                            srcset="./images/Demyanenko.jpg 1x, ./images/Demyanenko2x.jpg 2x" 
+                            alt="Игорь Демьяненко"
+                            loading="lazy">
+                    </div>
                     <h3 class="item__name">Игорь Демьяненко</h3>
                     <p class="item__job-position" lang="en">Product Designer</p>
                     <ul class="social-links__list">
@@ -154,7 +174,13 @@
                         </li>
                     </ul>
                 </li>
-                <li class="team__item"><img src="./img/OlgaRepina.jpg" alt="Ольга Репина" width="270"/>
+                <li class="team__item">
+                    <div class="team__thumb">
+                        <img src="./images/team/img.jpg" 
+                                srcset="./images/Repina.jpg 1x, ./images/Repina2x.jpg 2x" 
+                                alt="Ольга Репина"
+                                loading="lazy">
+                         </div>
                     <h3 class="item__name">Ольга Репина</h3>
                     <p class="item__job-position" lang="en">Frontend Developer</p>
                     <ul class="social-links__list">
@@ -189,9 +215,14 @@
                      </ul>
                 </li>
                 <li class="team__item">
-                    <img src="./img/NikolayTarasov.jpg" alt="Николай Тарасов" width="270"/>
+                    <div class="team__thumb">
+                        <img src="./images/team/img.jpg" 
+                            srcset="./images/Tarasov.jpg 1x, ./images/Tarasov2x.jpg 2x" 
+                            alt="Николай Тарасов"
+                            loading="lazy">
+                    </div>
                     <h3 class="item__name">Николай Тарасов</h3>
-                    <p class="item__job-position" lang="en">Marketing</p>
+                    <p class="item__job-position" lang="en">Marketing</p> 
                     <ul class="social-links__list">
                         <li class="social-links__item">
                             <a class="social-links__link" href="">
@@ -224,7 +255,12 @@
                     </ul>
                 </li>
                 <li class="team__item">
-                    <img src="./img/MikhailYermakov.jpg" alt="Михаил Ермаков" width="270"/>
+                    <div class="team__thumb">
+                        <img src="./images/team/img.jpg" 
+                            srcset="./images/Yermakov.jpg 1x, ./images/Yermakov2x.jpg 2x" 
+                            alt="Михаил Ермаков"
+                            loading="lazy">
+                    </div>
                     <h3 class="item__name">Михаил Ермаков</h3>
                     <p class="item__job-position" lang="en">UI Designer</p>
                     <ul class="social-links__list">
@@ -263,7 +299,7 @@
     </section>
 
     <!-- Clients-->
-    <section>
+    <section  class="clients">
         <div class="container">
             <h2 class="clients__section-title">Постоянные клиенты</h2>
             <ul class="clients__list">

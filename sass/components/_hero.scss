@@ -5,8 +5,8 @@
       
       @media screen and (max-width: 767px) {
       .hero {
-        background-image: var(--gradient-hero),
-        url(../images/mobile/hero-480.jpg);
+        background-image: var(--gradient-color),
+        url(../images/Hero-img.jpg);
         background-repeat: no-repeat;
         background-size: cover;  
       }
@@ -17,8 +17,8 @@
       .hero {
         max-width: 767px;
       
-        background-image: var(--gradient-hero),
-        url(../images/mobile/hero-480@2x.jpg);
+        background-image: var(--gradient-color),
+        url(../images/Hero-img2x.jpg);
         background-repeat: no-repeat;
         background-size: cover;  
       }
@@ -27,8 +27,8 @@
       
       @media screen and (min-width: 768px) {
       .hero {
-        background-image: var(--gradient-hero),
-        url(../images/mobile/hero-768.jpg);
+        background-image: var(--gradient-color),
+        url(../images/Hero-img2x.jpg);
         background-repeat: no-repeat;
         background-size: cover;  
       }
@@ -38,8 +38,8 @@
       screen and (min-resolution: 2dppx) {
       .hero {
         min-width: 768px;
-        background-image: var(--gradient-hero),
-        url(../images/mobile/hero-768@2x.jpg);
+        background-image: var(--gradient-color),
+        url(../images/Hero-img2x.jpg);
         background-repeat: no-repeat;
         background-size: cover;  
       }
@@ -51,19 +51,20 @@
         height: 600px;
       
         background-image: var(--gradient-hero),
-        url(../images/mobile/hero-1600.jpg);
+        url(../images/Hero-img2x.jpg);
         background-size: cover;  
         background-repeat: no-repeat;
       }
       @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      .hero {
+      
+        .hero {
         min-width: 1200px;
         height: 600px;
       
-        background-image: var(--gradient-hero),
-        url(../images/mobile/hero-1600@2x.jpg);
+        background-image: var(--gradient-color),
+        url(../images/Hero-img2x.jpg);
         background-size: cover;  
         background-repeat: no-repeat;
       }

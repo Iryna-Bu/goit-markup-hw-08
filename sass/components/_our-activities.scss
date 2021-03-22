@@ -1,3 +1,7 @@
+.activities {
+    padding-bottom:94px;
+}
+
 .section-title {
     padding-top: 94px;
     padding-bottom: 50px;
@@ -11,7 +15,7 @@
 .works {
     display:flex;
     justify-content: center;
-    padding-bottom:94px;
+   
    /* background-color: tomato;*/
 }
 
@@ -20,10 +24,34 @@
 }
 
 .item {
+    position: relative;
     margin-right: 30px;
     justify-content: center;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.item__description {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 27px 82px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background: rgba(47,48,58,0.8);
+    color: var(--white-text);
 }
 
-&:last-child {
-    margin-right: 0;
-}
+@media screen and (max-width: 1199px) {
+
+    .activities {
+        display: none;
+    }
+    }

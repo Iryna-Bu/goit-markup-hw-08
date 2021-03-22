@@ -21,18 +21,18 @@
     margin-right: 30px;
     background-position: center; 
     background-size: contain;
-}
 
-&:last-child {
-    margin-right: 0;
-}
-
-&:focus svg,
-&:hover svg,
-&:focus > .client-link,
-&:hover > .client-link {
-    fill: var(--accent-color);
-    border-color: var(--accent-color);
+    &:last-child {
+        margin-right: 0;
+    
+    &:focus svg,
+    &:hover svg,
+    &:focus > .client-link,
+    &:hover > .client-link {
+        fill: var(--accent-color);
+        border-color: var(--accent-color);
+    }
+    }
 }
 
 .client__link {

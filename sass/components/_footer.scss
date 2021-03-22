@@ -42,6 +42,7 @@
     margin-left: 70px;
     /*background-color: tomato;*/
 }
+
 .social-networks__item {
     display: flex;
     justify-content: center;
@@ -49,8 +50,8 @@
     margin-right: 10px;
 }
 
-&:last-child {
-    margin-right: 0;
+.social-networks__item :last-child {
+        margin-right: 0;
 }
 
 .social-networks__link {
@@ -63,11 +64,11 @@
     height: 44px;
     border-radius: 50px;
     background-color: rgba(255, 255, 255, 0.1);  
-}
 
-&:hover, 
-&:focus {
-    background-color: var(--accent-color);
+    &:hover, 
+    &:focus {
+        background-color: var(--accent-color);
+    }
 }
 
 .social-networks__icon {
@@ -78,11 +79,11 @@
     width: 20px;
     height:20px;
     fill: var(--primary-white-color); 
-}
 
-.social-networks__icon svg:hover, 
-.social-networks__icon svg:focus {
-    fill: var(--primary-white-color);
+    & svg:hover, 
+    & svg:focus {
+        fill: var(--primary-white-color);
+    }
 }
 
 .address {
@@ -99,12 +100,12 @@
     line-height: 1.71;
     color:var(--secondary-text-color);
     text-decoration: none;
-}
 
-&:hover, 
-&:focus {
-    font-style: normal;
-    color: var(--accent-color); 
+    &:hover, 
+    &:focus {
+        font-style: normal;
+        color: var(--accent-color); 
+    }
 }
 
 .item-contact {
@@ -115,12 +116,12 @@
     line-height: 1.71;
     color:var(--secondary-text-color);
     text-decoration: none;
-}
 
-&:hover, 
-&:focus {
-    font-style: normal;
-    color: var(--accent-color); 
+    &:hover, 
+    &:focus {
+        font-style: normal;
+        color: var(--accent-color); 
+    }
 }
 
 .signup {
@@ -172,10 +173,10 @@
 
     color: var(--primary-white-color);
     background-color: var(--accent-color);
-}
 
-&:focus {
-    outline: none;
+    &:focus {
+        outline: none;
+    }
 }
 
 .icon-send {
