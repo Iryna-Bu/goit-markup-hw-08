@@ -1,5 +1,13 @@
 .activities {
-    padding-bottom:94px;
+    display: none;
+
+    @media (min-width: 1200px) {
+        display: block;
+    }
+}
+
+.activities-container {
+    padding: 0 15px 94px;
 }
 
 .section-title {
@@ -15,13 +23,8 @@
 .works {
     display:flex;
     justify-content: center;
-   
-   /* background-color: tomato;*/
 }
 
-.img {
-    display: block;
-}
 
 .item {
     position: relative;
@@ -37,8 +40,6 @@
     width: 100%;
     bottom: 0;
     padding: 27px 82px;
-    font-family: Roboto;
-    font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -48,10 +49,3 @@
     background: rgba(47,48,58,0.8);
     color: var(--white-text);
 }
-
-@media screen and (max-width: 1199px) {
-
-    .activities {
-        display: none;
-    }
-    }

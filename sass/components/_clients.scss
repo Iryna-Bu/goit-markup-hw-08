@@ -1,36 +1,17 @@
 .clients__section-title {
-    
-    padding-bottom: 30px;
+    padding-top: 94px;
+    padding-bottom: 50px;
     font-weight: bold;
     font-size: 36px;
     line-height: 1.66;
     text-align: center;
     color: var(--primary-text-color);
-    
-    @media screen and (min-width: 1200px) {
-        padding-top: 94px;
-        padding-bottom: 50px;
-    }
-}
-
-.clients__container {
-    @media screen and (min-width: 768px) {
-        max-width: 768px;
-    }
-    @media screen and (min-width: 1200px) {
-        max-width: 1200px;
-    }
 }
 
 .clients__list {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 94px;
-
-    @media screen and (min-width: 768px) and (max-width: 1199px)  {
-        flex-basis: calc(100% / 3 - 30px);
-    }
 }
 
 .client {
@@ -41,17 +22,26 @@
     background-position: center; 
     background-size: contain;
 
-    &:last-child {
-        margin-right: 0;
-    
-    &:focus svg,
-    &:hover svg,
-    &:focus > .client-link,
-    &:hover > .client-link {
-        fill: var(--accent-color);
-        border-color: var(--accent-color);
+    flex-basis: calc(100% / 2 - 30px);
+  
+    @media (min-width: 768px) {
+      flex-basis: calc(100% / 3 - 30px);
     }
+    @media (min-width: 1200px) {
+      flex-basis: calc(100% / 6 - 30px);
     }
+
+&:last-child {
+    margin-right: 0;
+}
+
+&:focus svg,
+&:hover svg,
+&:focus > .client-link,
+&:hover > .client-link {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+}
 }
 
 .client__link {
@@ -60,16 +50,10 @@
     align-items: center;
     background-position: center; 
     background-size: contain;
+    width: 170px;
     height: 90px;
     border: 1px solid var(--client-color);
     border-radius: 4px; 
-
-    @media screen and (min-width: 768px) {
-        width: 226px;
-    }
-    @media screen and (min-width: 1200px) {
-        width: 170px;
-    }
 }
 
 .client__icon {
